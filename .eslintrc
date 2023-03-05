@@ -1,0 +1,55 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "js": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "plugins": [
+    "react",
+    "prettier",
+    "import"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-debugger": "off",
+    "import/order": "error",
+    "class-methods-use-this": "off",
+    "new-cap": "off",
+    "import/no-cycle": "off",
+    "no-case-declarations": "off",
+    "import/prefer-default-export": "off",
+    "no-unused-vars": "warn",
+    "react/display-name": "warn",
+    "react/prop-types": "off",
+    "import/no-unresolved": "warn",
+    "import/no-extraneous-dependencies": "warn"
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:react/recommended"
+  ],
+  "globals": {
+    "document": "readonly",
+    "window": "readonly",
+    "Event": "readonly",
+    "btoa": "readonly",
+    "navigator": "readonly",
+    "fetch": "readonly",
+    "test": "readonly",
+    "expect": "readonly"
+  },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+}
